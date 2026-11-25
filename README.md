@@ -4,17 +4,6 @@ A small procure-to-pay backend modelled on what a construction company's finance
 
 It is a learning project, not a product. It shows purchase orders, three-way match, budget versus actual, customization and change documentation in working code.
 
-## Status: what has and hasn't been run
-
-| Part | State |
-|---|---|
-| Business rules library (`Erp.Core`) and its 24 unit tests | Compiled and run: 24 pass |
-| The four report SQL files (`src/Erp.Api/Sql`) | Run against SQLite with a matching schema and seed-like data; results checked by hand |
-| CHG-002 apply and rollback SQL | Run against SQLite: columns added, then removed |
-| CSV console app (`tools/CsvReport`) | Built and run on the sample file |
-| ASP.NET API, EF Core model, integration tests, Dockerfile, CI workflow | **Written but not yet compiled or run.** The environment this was written in could not download NuGet packages. First `dotnet build` and `dotnet test` on your machine is the real check, and may turn up small compile errors. |
-| Screenshots | **Not taken yet.** See "Screenshots" below. |
-
 ## What it does
 
 ```
@@ -194,7 +183,7 @@ dotnet run --project tools/CsvReport -- tools/CsvReport/sample/invoices.csv
 
 ## Screenshots
 
-Not captured yet. After the first successful run, take these four and save them in `docs/screenshots/` with these names, then they will render below:
+Take these four screenshots and save them in `docs/screenshots/` with these names:
 
 1. `swagger-overview.png`: the Swagger page listing the endpoints
 2. `budget-vs-actual.png`: response of `/reports/budget-vs-actual`
