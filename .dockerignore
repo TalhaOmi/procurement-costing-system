@@ -1,0 +1,7 @@
+**/bin/
+**/obj/
+**/*.db
+.git/
+docs/
+tests/
+tools/

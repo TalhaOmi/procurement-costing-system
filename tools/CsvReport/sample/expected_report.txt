@@ -1,0 +1,22 @@
+Invoice report for invoices.csv
+5 valid invoices totalling 193,950.50; 5 rejected rows
+
+By vendor
+  Lakeside Electrical, Inc.      1 invoices     110,000.00
+  Apex Steel Supply              2 invoices      63,200.00
+  Northern Concrete Ltd          2 invoices      20,750.50
+
+By project
+  P-1001                         3 invoices      68,750.50
+  P-1002                         2 invoices     125,200.00
+
+By month
+  2026-10                        1 invoices      15,200.00
+  2026-11                        4 invoices     178,750.50
+
+Rejected rows
+  line 7: duplicate invoice LE-0091 for Lakeside Electrical, Inc.
+  line 8: amount -250.00 must be positive
+  line 9: amount 'abc' is not a number
+  line 10: vendor is blank
+  line 11: date 'not-a-date' is not a date
